@@ -1,0 +1,18 @@
+title: Ganghun Lee
+subtitle: (이강훈, @ghlee)
+face: /assets/img/ganghunlee.jpg
+cv: /assets/cv.pdf  # TODO
+description: Ph.D. at Seoul National University
+location: Seoul, Korea
+email: zxc8594@snu.ac.kr
+homepage: https://minnjung.github.io  # TODO
+#twitter:
+github: https://github.com/northadventure  # TODO
+linkedin: https://www.linkedin.com/in/ganghun-lee/
+# google_analytics: UA-146496389-1  # TODO (what is this?)
+theme: jekyll-theme-minimal
+google_scholar: https://scholar.google.com/citations?user=wN-2e1MAAAAJ&hl=en
+# semantic_scholar:   # TODO
+
+plugins:
+  - jekyll-seo-tag

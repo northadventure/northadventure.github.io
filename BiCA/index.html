@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Bi-directional Contextual Attention for 3D Dense Captioning"
+    />
+    <meta
+      name="keywords"
+      content="BiCA, Context, Attnetion,3D Dense Captioning"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bi-directional Contextual Attention for 3D Dense Captioning</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->  
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+
+      gtag("js", new Date());
+
+      gtag("config", "G-PYVRSFMDRL");
+    </script>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./static/css/bulma.min.css" />
+    <link rel="stylesheet" href="./static/css/bulma-carousel.min.css" />
+    <link rel="stylesheet" href="./static/css/bulma-slider.min.css" />
+    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"
+    />
+    <link rel="stylesheet" href="./static/css/index.css" />
+    <link rel="icon" href="./static/images/favicon.svg" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./static/js/fontawesome.all.min.js"></script>
+    <script src="./static/js/bulma-carousel.min.js"></script>
+    <script src="./static/js/bulma-slider.min.js"></script>
+    <script src="./static/js/index.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+    
+  </head>
+  <body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div class="navbar-menu">
+        <div class="navbar-start" style="flex-grow: 1; justify-content: center">
+          <a class="navbar-item" href="https://minnjung.github.io/">
+            <span class="icon">
+              <i class="fas fa-home"></i>
+            </span>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <h1 class="title is-1 publication-title">
+                Bi-directional Contextual Attention<br />for 3D Dense Captioning
+              </h1>
+              <div class="is-size-5 publication-authors">
+                <span class="author-block">
+                  <a href="https://minnjung.github.io/">Minjung Kim</a
+                  ><sup>1,4,*</sup>,</span
+                >
+                <span class="author-block">
+                  <a href="https://hyungsuklim.github.io/">Hyung Suk Lim</a
+                  ><sup>3</sup>,</span
+                >
+                <span class="author-block">
+                  <a
+                    href="https://www.linkedin.com/in/soonyoung-lee-4309061a9/?originalSubdomain=kr"
+                    >Soonyoung Lee</a
+                  ><sup>2</sup>,
+                </span>
+                <span class="author-block">
+                  <a href="https://bmsookim.github.io/">Bumsoo Kim</a
+                  ><sup>2</sup>,
+                </span>
+                <span class="author-block">
+                  <a href="https://vision.snu.ac.kr/gunhee">Gunhee Kim</a
+                  ><sup>1</sup>,
+                </span>
+              </div>
+
+              <div class="is-size-5 publication-authors">
+                <span class="author-block">
+                  <sup>1</sup>Seoul National University, <sup>2</sup>LG AI
+                  Research, <sup>3</sup>Diquest, <sup>4</sup>SNU-LG AI Research
+                  Center <br />
+                  ECCV 2024
+                </span>
+                <span class="eql-cntrb" style="font-size: smaller">
+                  <small
+                    ><br /><sup>*</sup>Work done during an internship at LG AI
+                    Research</small
+                  >
+                </span>
+              </div>
+
+              <div class="column has-text-centered">
+                <div class="publication-links">
+                  <!-- PDF Link. -->
+                  <span class="link-block">
+                    <a
+                      href="https://arxiv.org/pdf/2408.06662"
+                      class="external-link button is-normal is-rounded is-dark"
+                    >
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Paper</span>
+                    </a>
+                  </span>
+                  <span class="link-block">
+                    <a
+                      href="https://arxiv.org/abs/2408.06662"
+                      class="external-link button is-normal is-rounded is-dark"
+                    >
+                      <span class="icon">
+                        <i class="ai ai-arxiv"></i>
+                      </span>
+                      <span>arXiv</span>
+                    </a>
+                  </span>
+                  <!-- Video Link. -->
+                  <span class="link-block">
+                    <a
+                      href=""
+                      class="external-link button is-normal is-rounded is-dark"
+                    >
+                      <span class="icon">
+                        <i class="fab fa-youtube"></i>
+                      </span>
+                      <span>Video</span>
+                    </a>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Image carousel -->
+    <section class="hero teaser"><center>
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <div class="column is-four-fifths">
+            <div class="item">
+              <img src="./static/images/concept.pdf" alt=" "  />
+            </div>
+          </div>
+        </div>
+        <h2 class="subtitle has-text-centered">
+          Bi-directional Contextual Attention (BiCA) generates object-aware
+          contexts, where the contexts relevant to each object is
+          summarized, and context-aware objects, where the objects
+          relevant to the summarized object-aware contexts are aggregated.
+        </h2>
+      </div>
+    </div>
+    </div>
+    </center></section>
+
+    <section class="section">
+      <div class="container is-max-desktop">
+        <!-- Abstract. -->
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Abstract</h2>
+            <div class="content has-text-justified">
+              <p>
+                3D dense captioning is a task involving the localization of
+                objects and the generation of descriptions for each object in a
+                3D scene. Recent approaches have attempted to incorporate
+                contextual information by modeling relationships with object
+                pairs or aggregating the nearest neighbor features of an object.
+                However, the contextual information constructed in these
+                scenarios is limited in two aspects: first, objects have
+                multiple positional relationships that exist across the entire
+                global scene, not only near the object itself. Second, it faces
+                with contradicting objectives--where localization and attribute
+                descriptions are generated better with tight localization, while
+                descriptions involving global positional relations are generated
+                better with contextualized features of the global scene.
+              </p>
+              <p>
+                To overcome this challenge, we introduce BiCA, a transformer
+                encoder-decoder pipeline that engages in 3D dense captioning for
+                each object with Bi-directional Contextual Attention. Leveraging
+                parallelly decoded instance queries for objects and context
+                queries for non-object contexts, BiCA generates object-aware
+                contexts, where the contexts relevant to each object is
+                summarized, and context-aware objects, where the objects
+                relevant to the summarized object-aware contexts are aggregated.
+                This extension relieves previous methods from the contradicting
+                objectives, enhancing both localization performance and enabling
+                the aggregation of contextual features throughout the global
+                scene; thus improving caption generation performance
+                simultaneously. Extensive experiments on two of the most
+                widely-used 3D dense captioning datasets demonstrate that our
+                proposed method achieves a significant improvement over prior
+                methods.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--/ Abstract. -->
+
+      </div>
+    </section>
+
+    <section class="section">
+        <h3 class="title is-3 has-text-centered">Model</h3>
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <figure>
+              <img src="static/images/overall_pipeline.pdf" alt="Model Architecture">
+            </figure>
+          </div>
+        </div>
+          <div class="container is-max-desktop content">
+          <p>
+            The overall pipeline of BiCA. We parallelly generate and decode two sets of queries (i.e., Instance Query and Context Query) that encodes the instance features and the non-object context features throughout the global scene, respectively. The object-aware contexts are calculated per each object by the weighted sum of the context queries, where the weights are calculated by the attention between the decoded instance query and context query. Then, with the object-aware context feature, the context-aware object feature is obtained by the weighted sum of the instances, which is weighted by the attention between the object-aware contexts.
+          </p>
+        </div>
+      </div>
+    </section>
+    
+    <section class="section">
+      <h3 class="title is-3 has-text-centered">Experimental Results</h3>
+      <div class="container is-max-desktop content">
+          
+          <figure>
+            <!-- 이미지 -->
+            <img src="./static/images/table1.png">
+            <!-- 캡션 -->
+            <figcaption class="has-text-centered">
+              Table 1: Experimental results on the ScanRefer. C, B-4, M, and R represent the captioning metrics CIDEr, BLEU-4, METEOR
+              ,and ROUGE-L, respectively. A higher score for each indicates better performance.
+            </figcaption>
+          </figure>
+
+          <figure>
+            <!-- 이미지 -->
+            <img src="./static/images/table2.png" style="width: 600px; height: auto;">
+            <!-- 캡션 -->
+            <figcaption class="has-text-centered">
+              Table 2: Experimental results on the Nr3D with IoU threshold at 0.5. C, B-4, M, and R represent the captioning metrics CIDEr, BLEU-4, METEOR
+              ,and ROUGE-L, respectively. A higher score for each indicates better performance.
+            </figcaption>
+          </figure>
+
+          <figure>
+            <!-- 이미지 -->
+            <img src="./static/images/table3.png" style="width: 600px; height: auto;">
+            <!-- 캡션 -->
+            <figcaption class="has-text-centered">
+              Table 3: Ablation study on the ScanRefer. 
+            </figcaption>
+          </figure>
+
+        </div>
+      </div>
+      </div>
+    </section>
+    
+    <section class="section">
+      <h3 class="title is-3 has-text-centered">Visualization</h3>
+      <div class="container is-max-desktop content">
+          
+          <figure>
+            <!-- 이미지 -->
+            <img src="./static/images/visualization.png">
+            <!-- 캡션 -->
+            <figcaption class="has-text-centered">
+              Visualization of (a) the input 3D scene, (b) input point cloud without color, (c) visualization of instance queries, (d) one sampled instance query, (e) contextual attention of (d), and (f) contextual attention of (e) on the ScanRefer
+            </figcaption>
+          </figure>
+
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section class="section" id="BibTeX">
+      <div class="container is-max-desktop content">
+        <h2 class="title">BibTeX</h2>
+        If you find our work useful in your research, please consider citing:
+        <pre><code>
+          @@InProceedings{,
+            author    = {Kim, Minjung and Lim, Hyung Suk and Lee, Soonyoung and Kim, Bumsoo and Kim, Gunhee},
+            title     = {Bi-directional Contextual Attention for 3D Dense Captioning},
+            journal   = {ECCV},
+            year      = {2024},
+}</code></pre>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container is-light">
+        <div class="columns is-centered">
+          <div class="column is-8">
+            <div class="content">
+    
+              <p>
+                This page was built using the <a href="https://github.com/nerfies/nerfies.github.io" target="_blank">Nerfies Project Page</a>.
+              </p>
+    
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
