@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'Noto Sans';
   font-weight: 400;
@@ -328,7 +329,12 @@ th {
   color: #444; }
 
 img {
-  max-width: 100%; }
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  /* 부드러운 그림자 */
+  margin: 10px 0; }
 
 img.small_icon {
   height: 15px;
@@ -342,7 +348,12 @@ header {
   width: 270px;
   float: left;
   position: fixed;
-  -webkit-font-smoothing: subpixel-antialiased; }
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(5px);
+  border-right: 1px solid #eee;
+  height: 100vh;
+  padding: 40px 25px;
+  box-sizing: border-box; }
 
 ul.downloads {
   list-style: none;
@@ -398,7 +409,14 @@ strong {
 section {
   width: 600px;
   float: right;
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+  /* 변형: 줄 간격과 글자 간격 미세 조정 */
+  line-height: 1.8;
+  /* 1.5에서 1.8로 (훨씬 시원해짐) */
+  letter-spacing: -0.02em;
+  /* 한글 읽기 편하게 살짝 좁힘 */
+  font-size: 15px;
+  /* 14px에서 15px로 미세 상향 */ }
 
 small {
   font-size: 11px; }
@@ -505,3 +523,38 @@ footer {
 .ai {
   padding-left: 2px;
   padding-right: 3px; }
+
+.publications-list {
+  /* 리스트 자체의 기본 패딩/마진 제거 (필요 시) */
+  /* 논문 제목 강조 */ }
+  .publications-list ul, .publications-list ol {
+    padding-left: 1.2rem;
+    margin-top: 10px; }
+  .publications-list li {
+    margin-bottom: 12px;
+    /* 논문과 논문 사이의 간격 (적절히 조절) */
+    line-height: 1.3;
+    /* 전체적인 줄 간격을 더 타이트하게 */
+    list-style-type: disc; }
+  .publications-list strong {
+    color: #333;
+    margin-bottom: 2px; }
+  .publications-list em {
+    font-style: normal;
+    /* 이탤릭보다 색상으로 구분 권장 */
+    color: #666;
+    font-size: 0.9em; }
+
+.experiences {
+  margin-bottom: 20px; }
+
+h4.exp-title {
+  margin-bottom: 12px; }
+
+.exp-details {
+  margin-left: 25px;
+  margin-top: -15px;
+  margin-bottom: 5px;
+  line-height: 1.4;
+  display: flex;
+  flex-wrap: wrap; }

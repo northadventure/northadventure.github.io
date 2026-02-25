@@ -8,6 +8,7 @@
 {% seo %}
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&icon_names=tactic&display=block" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
     <link rel="shortcut icon" type="image/png" href="favicon.png">
@@ -24,6 +25,10 @@
         <h1 class="title">{{ site.title }}</h1>
         <h2 class="subtitle">{{ site.subtitle }}</h2>
 
+        <div style="font-size: 0.85rem; color: #777; font-weight: 400; font-family: sans-serif;">
+          Legal Name: <span style="font-weight: 500; color: #555;">Kanghoon Lee</span>
+        </div>
+
         {% if site.face %}
           <img src="{{site.face | relative_url}}" alt="Face" />
         {% endif %}
@@ -36,18 +41,18 @@
           <i class="material-icons md-18">home</i> {{ site.homepage }}<br/>
         </a>
         -->
-        <a href="{{ site.google_scholar }}">
+        <a href="{{ site.google_scholar }}", target="_blank">
           <i class="ai ai-google-scholar"></i>  Google Scholar<br/>
         </a>
-        <a href="{{ site.semantic_scholar }}">
+        <!-- <a href="{{ site.semantic_scholar }}">
           <i class="ai ai-semantic-scholar"></i>  Semantic Scholar<br/>
-        </a>
+        </a> -->
         <!--
         <a href="{{ site.twitter }}">
           <i class="fab fa-twitter"></i> Twitter<br/>
         </a>
       -->
-        <a href="{{ site.github }}">
+        <a href="{{ site.github }}", target="_blank">
           <i class="fab fa-github"></i> Github<br/>
         </a>
         <!--
@@ -66,7 +71,7 @@
 
       </section>
       <footer>
-        <p><small>Hosted on GitHub Pages<br/> Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
+        <p><small>Hosted on GitHub Pages<br/> Based on a theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
       </footer>
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
