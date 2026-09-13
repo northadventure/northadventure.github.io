@@ -16,51 +16,19 @@ layout: default
   document.getElementById("time-message").innerText = message;
 </script>
 
-I am a **Ph.D. candidate** in the **Interdiscimplinary Program in Artificial Intelligence** at **Seoul National University**.
-I have been a member of the **[Biointelligence Lab](https://bi.snu.ac.kr/)** since 2020, under the supervision of **[Prof. Byoung-Tak Zhang](https://bi.snu.ac.kr/members/byoung-tak-zhang.html)**.
+I am currently at **AI Institute Seoul National University (AIIS)**, completing my third year of service as **Professional Research Personnel**.
+I received my **Ph.D.** in the **Interdisciplinary Program in Artificial Intelligence** at **Seoul National University** in August 2026. During my graduate studies, I conducted research at the **[Biointelligence Lab](https://bi.snu.ac.kr/)** under the supervision of **[Prof. Byoung-Tak Zhang](https://bi.snu.ac.kr/members/byoung-tak-zhang.html)**, beginning in 2020.
 
 ### Research Focus
-My research focuses on **Reinforcement Learning (RL)**, with specific expertise applied across following domains:
+My research focuses on **Reinforcement Learning (RL)** for sequential decision-making, with an emphasis on developing general learning methods that support effective behavior in autonomous systems. My work spans continuous control, visually guided tasks, and multi-agent tactical coordination.
 
-* 🤖 **Robotic Locomotion & Manipulation**
-* 🎨 **Visual Arts**
-* ⚔️ **Multi-agent Military Combat & Tactics**
-* 🧠 **Cognitive Insights for RL Enhancement**
+* 🧠 **Sequential Decision-Making & Reinforcement Learning**
+* 🛩️ **Autonomous Systems & Multi-Agent Coordination**
+* 📷 **Visual Learning & Control**
 
-I am currently focusing on my dissertation, proposing a generalized framework for desired-state-based reinforcement learning to broaden the scope of application and the practical utility of RL.
+I am increasingly interested in connecting advances in RL to practical autonomous systems, including autonomous combat systems and manned–unmanned teaming.
 
-### Education
-
-<h4 class="education">
-  <i class="material-icons md-18">account_balance</i>
-  <a href="http://en.snu.ac.kr/" target="_blank">Seoul National University</a>, Republic of Korea
-  <sup>2022.09. - Present</sup>
-</h4>
-
-- Ph.D. candidate in [Interdiscimplinary Program in Artificial Intelligence](https://gsai.snu.ac.kr/)
-- Cumulative GPA: 3.68 / 4.3 (3.88 / 4.5)
-- Advisor: **[Prof. Byoung-Tak Zhang](https://bi.snu.ac.kr/members/byoung-tak-zhang.html)**
-
-<h4 class="education">
-  <i class="material-icons md-18">account_balance</i>
-  <!-- <i class="material-icons md-18">handyman</i> -->
-  <a href="http://en.snu.ac.kr/" target="_blank">Seoul National University</a>, Republic of Korea
-  <sup>2020.03. - 2022.08.</sup>
-</h4>
-
-- M.S. student in [Interdisciplinary Program in Cognitive Science](https://cogsci.snu.ac.kr/)
-- Cumulative GPA: 4.12 / 4.3 (4.32 / 4.5)
-- Advisor: **[Prof. Byoung-Tak Zhang](https://bi.snu.ac.kr/members/byoung-tak-zhang.html)**
-
-<h4 class="education">
-  <i class="material-icons md-18">school</i>
-  <a href="https://www.khu.ac.kr/eng/user/main/view.do" target="_blank">Kyunghee University</a>, Republic of Korea
-  <sup>2016.03 - 2020.02</sup>
-</h4>
-
-- B.S. in [Computer Science and Engineering](https://ce.khu.ac.kr/ce/user/main/view.do)
-- Cumulative GPA: 3.68 / 4.3 (3.97 / 4.5)
-
+My doctoral research focused on a generalized framework for desired-state-based reinforcement learning to broaden the scope of application and the practical utility of RL.
 
 <div class="publications-list" markdown="1">
 
@@ -154,7 +122,7 @@ KSC 2021
 KCC 2021, KIISE 2023 (<span style="color: #0056b3; font-weight: bold;">Best paper award</span>)
 <a class="code" href="https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE11214553" target="_blank">[pdf]</a>
 
-- **Model-Based Curriculum Reinforcement Learning for Continuous Line Drwaing** <br/>
+- **Model-Based Curriculum Reinforcement Learning for Continuous Line Drawing** <br/>
 **Ganghun Lee**, Minji Kim, Byoung-Tak Zhang <br/>
 KCC 2021
 <a class="code" href="https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE10583172" target="_blank">[pdf]</a>
@@ -210,7 +178,7 @@ KSC 2017 Undergraduate Session
 
 </div>
 
-### Experiences
+### Research & Industry Experience
 <div class="experiences">
 
   <h4 class="exp-title">
@@ -218,11 +186,9 @@ KSC 2017 Undergraduate Session
     Professional Research Personnel, Republic of Korea
     <sup> 2024.09. - 2027.08. (expected) </sup>
   </h4>
-  <div class="exp-details" style="margin-left: 25px; margin-top: -15px; margin-bottom: 20px;">
-    - <a class="code" href="https://bi.snu.ac.kr/" target="_blank">Biointelligence Lab</a>, Seoul National University<sup> 2024.09. - 2026.08. (expected) </sup><br/>
-    <div style="margin-top: 5px; color: #d9534f; font-weight: 500;">
-      <em>* Seeking at least 1-year research/industry position for the final year of service (Sep 2026 – Aug 2027).</em>
-    </div>
+  <div class="exp-details">
+    <div style="flex: 0 0 100%;">- <a class="code" href="https://aiis.snu.ac.kr/eng/" target="_blank">AI Institute Seoul National University (AIIS)</a><sup> 2026.09. - Present </sup></div>
+    <div style="flex: 0 0 100%;">- <a class="code" href="https://bi.snu.ac.kr/" target="_blank">Biointelligence Lab</a>, Seoul National University<sup> 2024.09. - 2026.08. </sup></div>
   </div>
 
   <h4 class="exp-title">
@@ -333,4 +299,3 @@ KSC 2017 Undergraduate Session
 - **Leadership & Activity Scholarship**, Kyunghee University, 2019
 - **Programming Contest** (Encouragement Award), Kyunghee University, 2018
 - **Academic Excellence Scholarship**, Kyunghee University, 2016, 2017, 2019
-
