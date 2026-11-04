@@ -32,14 +32,83 @@ My doctoral research focused on a generalized framework for desired-state-based 
 
 <div class="publications-list" markdown="1">
 
-### Publications
-- **Exponential Increase in Rewards Boosts Reinforcement Learning** <br/>
+### Selected Publications
+- **Reward Inflation: A Healthy Stimulus for Reinforcement Learning** <br/>
 **Ganghun Lee**, Minji Kim, Minsu Lee, Byoung-Tak Zhang <br/>
-(Under review)
+NeurIPS 2026
+<a class="code" href="https://arxiv.org/pdf/2610.02545" target="_blank">[preprint]</a>
 
 - **Climb with SHERPA: Heuristic-Guided Reinforcement Learning via Segmented Experience Relay** <br/>
 Minji Kim, **Ganghun Lee**, Minsu Lee, Byoung-Tak Zhang <br/>
 RA-L 2026
+<a class="code" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11434514" target="_blank">[pdf]</a>
+
+- **Recency-Biased Sampling for Up-to-Date Adaptation of Reinforcement Learning** <br/>
+**Ganghun Lee**, Minji Kim, Minsu Lee, Byoung-Tak Zhang <br/>
+KSC 2025 (<span style="color: #0056b3; font-weight: bold;">Best paper award</span>)
+<a class="code" href="https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE12577574" target="_blank">[pdf]</a>
+
+- **Truncated Gaussian Policy for Debiased Continuous Control** <br/>
+**Ganghun Lee**, Minji Kim, Minsu Lee, Byoung-Tak Zhang <br/>
+AAAI 2025 (<span style="color: #0056b3; font-weight: bold;">Oral presentation</span>)
+<a class="code" href="https://ojs.aaai.org/index.php/AAAI/article/view/33988" target="_blank">[pdf]</a>
+
+- **Neural Collage Transfer: Artistic Reconstruction via Material Manipulation** <br/>
+**Ganghun Lee**, Minji Kim, Yunsu Lee, Minsu Lee, Byoung-Tak Zhang <br/>
+ICCV 2023
+<a class="code" href="https://openaccess.thecvf.com/content/ICCV2023/papers/Lee_Neural_Collage_Transfer_Artistic_Reconstruction_via_Material_Manipulation_ICCV_2023_paper.pdf" target="_blank">[pdf]</a>
+<a class="code" href="https://github.com/northadventure/CollageRL" target="_blank">[github]</a>
+
+- **Defiant Policy Learning for Efficient Exploration in Reinforcement Learning** <br/>
+**Ganghun Lee**, Minsu Lee, Byoung-Tak Zhang <br/>
+KSC 2023
+<a class="code" href="https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE11705331" target="_blank">[pdf]</a>
+
+- **H2RL: Transferring Heuristic Knowledge to a Reinforcement Learning Agent for Solving the Online 3D Bin Packing Problem** <br/>
+Minji Kim<sup>†</sup>, **Ganghun Lee**<sup>†</sup>, Minsu Lee, Byoung-Tak Zhang <br/>
+ICRA 2023 Workshop (<span style="color: #0056b3; font-weight: bold;">Spotlight</span>)
+<a class="code" href="https://transferabilityinrobotics.github.io/icra2023/spotlight/TRW08_abstract.pdf" target="_blank">[pdf]</a>
+
+- **Multi-Agent Reinforcement Learning for Cover Tactics in SMAC Environment** <br/>
+Yesol Park, **Ganghun Lee**, Yunsu Lee, Junseok Park, Byoung-Tak Zhang <br/>
+KSC 2023
+<a class="code" href="https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE11705319" target="_blank">[pdf]</a>
+
+- **From Scratch to Sketch: Deep Decoupled Hierarchical Reinforcement Learning for Robotic Sketching Agent** <br/>
+**Ganghun Lee**, Minji Kim, Minsu Lee, Byoung-Tak Zhang <br/>
+ICRA 2022
+<a class="code" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9811858" target="_blank">[pdf]</a>
+
+- **Response Analysis of Deep Neural Networks to Optical Illusion Video** <br/>
+**Ganghun Lee**, Kibeom Kim, Minsu Lee, Byoung-Tak Zhang <br/>
+KSC 2021
+<a class="code" href="https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE11035857" target="_blank">[pdf]</a>
+
+- **Diverged Episodic Memory-based Self-Supervised Policy Learning** <br/>
+**Ganghun Lee**, Kibeom Kim, Dong-sig Han, Byoung-Tak Zhang <br/>
+KCC 2021, KIISE 2023 (<span style="color: #0056b3; font-weight: bold;">Best paper award</span>)
+<a class="code" href="https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE11214553" target="_blank">[pdf]</a>
+
+- **Evolved Intrinsic Motivation for Fully Autonomous Reinforce Learning** <br/>
+**Ganghun Lee**, Byoung-Tak Zhang <br/>
+KSC 2020
+<a class="code" href="https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE10529765" target="_blank">[pdf]</a>
+
+</div>
+
+<details class="foldable-section">
+<summary>All Publications</summary>
+<div class="publications-list" markdown="1">
+
+- **Reward Inflation: A Healthy Stimulus for Reinforcement Learning** <br/>
+**Ganghun Lee**, Minji Kim, Minsu Lee, Byoung-Tak Zhang <br/>
+NeurIPS 2026
+<a class="code" href="https://arxiv.org/pdf/2610.02545" target="_blank">[preprint]</a>
+
+- **Climb with SHERPA: Heuristic-Guided Reinforcement Learning via Segmented Experience Relay** <br/>
+Minji Kim, **Ganghun Lee**, Minsu Lee, Byoung-Tak Zhang <br/>
+RA-L 2026
+<a class="code" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11434514" target="_blank">[pdf]</a>
 
 - **Recency-Biased Sampling for Up-to-Date Adaptation of Reinforcement Learning** <br/>
 **Ganghun Lee**, Minji Kim, Minsu Lee, Byoung-Tak Zhang <br/>
@@ -177,8 +246,10 @@ KSC 2017 Undergraduate Session
 <a class="code" href="https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE07322784" target="_blank">[pdf]</a>
 
 </div>
+</details>
 
-### Research & Industry Experience
+<details class="foldable-section">
+<summary>Research &amp; Industry Experience</summary>
 <div class="experiences">
 
   <h4 class="exp-title">
@@ -284,8 +355,11 @@ KSC 2017 Undergraduate Session
   </div>
 
 </div>
+</details>
 
-### Awards & Scholarships
+<details class="foldable-section">
+<summary>Awards &amp; Scholarships</summary>
+<div markdown="1">
 - **Grand Prize at 2025 Demo Competition**, Seoul National University, 2025
 - **AAAI 2025 Oral Presentation**, 2025
 - **KSC 2025 Best Paper Award**, 2025
@@ -299,3 +373,5 @@ KSC 2017 Undergraduate Session
 - **Leadership & Activity Scholarship**, Kyunghee University, 2019
 - **Programming Contest** (Encouragement Award), Kyunghee University, 2018
 - **Academic Excellence Scholarship**, Kyunghee University, 2016, 2017, 2019
+</div>
+</details>
