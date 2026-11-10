@@ -21,7 +21,7 @@ But the fun begins with **trial and error** where a machine learns from **tons o
 Imitation reproduces, but **action** **discovers**.  
 We are all discovered beings of ongoing **evolution**, emerging from **uncertainty**, in all our **diversity**.
 
-<div style="text-align: right;">And we are all <strong>failures</strong>.</div>
+<div style="text-align: right;">And we are all failures.</div>
 </div>
 
 <hr class="intro-divider">
