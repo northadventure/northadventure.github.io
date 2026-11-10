@@ -32,16 +32,17 @@
     <![endif]-->
   </head>
   <body>
+    <div class="top-placeholder" aria-hidden="true"></div>
     <div class="wrapper">
       <header>
         <!--
         <h1><a href="http://0.0.0.0:27994/">Ganghun Lee</a></h1>
         -->
         <h1 class="title">Ganghun Lee</h1>
-        <h2 class="subtitle">(이강훈, @ghlee)</h2>
+        <h2 class="subtitle">(이강훈, 李康勳)</h2>
 
         
-          <img src="/assets/img/ganghunlee.jpg" alt="Face" />
+          <img src="/assets/img/1.jpg" alt="Face" />
         
 
         <i class="material-icons md-18">location_on</i> Seoul, Korea<br/>
@@ -65,7 +66,7 @@
         <a href="https://github.com/northadventure", target="_blank">
           <i class="fab fa-github"></i> Github<br/>
         </a>
-        <a href="https://www.linkedin.com/in/ganghun-lee/" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.linkedin.com/in/ganghun-lee" target="_blank" rel="noopener noreferrer">
           <i class="fab fa-linkedin"></i> LinkedIn<br/>
         </a>
         <a href="">
@@ -85,120 +86,157 @@
       </header>
       <section>
 
-      <div id="time-message"></div>
-<script>
-  const hour = new Date().getHours();
-  let message = "";
-  if (hour < 12 && hour >= 6) {
-    message = "Good Morning!";
-  } else if (hour < 18 && hour >= 12) {
-    message = "Good Afternoon!";
-  } else {
-    message = "Good Evening!";
-  }
-  document.getElementById("time-message").innerText = message;
-</script>
+      <style>
+  .thought-text strong {
+  background: linear-gradient(transparent 55%, #fff2a8 55%);
+  padding: 0 0.08em;
+}
+</style>
 
-<p>I am currently at <strong>AI Institute Seoul National University (AIIS)</strong>, completing my third year of service as <strong>Professional Research Personnel</strong>.
-I received my <strong>Ph.D.</strong> in the <strong>Interdisciplinary Program in Artificial Intelligence</strong> at <strong>Seoul National University</strong> in August 2026. During my graduate studies, I conducted research at the <strong><a href="https://bi.snu.ac.kr/">Biointelligence Lab</a></strong> under the supervision of <strong><a href="https://bi.snu.ac.kr/members/byoung-tak-zhang.html">Prof. Byoung-Tak Zhang</a></strong>, beginning in 2020.</p>
+<div class="thought-text" style="font-family: Georgia, 'Times New Roman', serif; font-size: 19px; line-height: 1.65; color: #727272;">
+  <p>What’s the essence of learning?<br />
+I’d say it’s <strong>experience</strong>.</p>
 
-<h3 id="research-focus">Research Focus</h3>
-<p>My research focuses on <strong>Reinforcement Learning (RL)</strong> for sequential decision-making, with an emphasis on developing general learning methods that support effective behavior in autonomous systems. My work spans continuous control, visually guided tasks, and multi-agent tactical coordination.</p>
+  <p>Data is a static essence of experience.<br />
+Supervised learning is an imitation of paired data.<br />
+Neural networks enable generalization and interpolation.</p>
 
-<ul>
-  <li>🧠 <strong>Sequential Decision-Making &amp; Reinforcement Learning</strong></li>
-  <li>🛩️ <strong>Autonomous Systems &amp; Multi-Agent Coordination</strong></li>
-  <li>📷 <strong>Visual Learning &amp; Control</strong></li>
-</ul>
+  <p>But the fun begins with <strong>trial and error</strong> where a machine learns from <strong>tons of failures</strong>.<br />
+Imitation reproduces, but <strong>action</strong> <strong>discovers</strong>.<br />
+We are all discovered beings of ongoing <strong>evolution</strong>, emerging from <strong>uncertainty</strong>, in all our <strong>diversity</strong>.</p>
 
-<p>I am increasingly interested in connecting advances in RL to practical autonomous systems, including autonomous combat systems and manned–unmanned teaming.</p>
+  <div style="text-align: right;">And we are all <strong>failures</strong>.</div>
+</div>
 
-<p>My doctoral research focused on a generalized framework for desired-state-based reinforcement learning to broaden the scope of application and the practical utility of RL.</p>
+<hr class="intro-divider" />
 
-<div class="publications-list">
+<div class="content-row">
+<h3>About</h3>
+<div class="content-body" style="font-family: Georgia, 'Times New Roman', serif; font-size: 16px; line-height: 1.65; color: #727272;">
+    <p>AI Researcher at <strong><a href="https://aiis.snu.ac.kr/">AIIS</a></strong>, SNU.<br />
+Earned my M.S. and Ph.D. from SNU at the <strong><a href="https://bi.snu.ac.kr/">Biointelligence Lab</a></strong>, under the supervision of <strong><a href="https://bi.snu.ac.kr/members/byoung-tak-zhang.html">Prof. Byoung-Tak Zhang</a></strong>.<br /></p>
+  </div>
+</div>
 
-  <h3 id="selected-publications">Selected Publications</h3>
-  <ul>
-    <li>
-      <p><strong>Reward Inflation: A Healthy Stimulus for Reinforcement Learning</strong> <br />
+<div class="content-row">
+<h3>Research Focus</h3>
+<div class="content-body" style="font-family: Georgia, 'Times New Roman', serif; font-size: 16px; line-height: 1.65; color: #727272;">
+    <p><span style="color: #444444;">Experience-driven Learning, Reinforcement Learning, Robotics &amp; Simulation, Behavioral Diversity, Sequential Discovery, Autonomous System</span><br /></p>
+
+    <p>CS to CS, CS to AI.
+Excited to make something, became curious about intelligence.
+Now I’m one of the most serious people about the importance of experience-based learning.
+There’s so much data, growing exponentially. Data-driven methods have advanced explosively, and still are.
+On the other hand, the role of experience seems a bit hidden, despite having so much potential.
+<span style="color: #444444;">It’s time to shine: to fill the gaps in dynamics, creativity, and agency.</span></p>
+
+    <p>Currently working on modality-retaining policies and RL as a discovery machine, on the stage of unsupervised sequential sketch generation.
+Also interested in prior utilization for RL.
+Seeing VLMs as the cerebrum and RL policies as the cerebellum.</p>
+  </div>
+</div>
+
+<div class="content-row publications-list">
+<h3>Selected Publications</h3>
+<div class="content-body">
+    <ul>
+      <li>
+        <p><strong>Reward Inflation: A Healthy Stimulus for Reinforcement Learning</strong> <br />
 <strong>Ganghun Lee</strong>, Minji Kim, Minsu Lee, Byoung-Tak Zhang <br />
 NeurIPS 2026
 <a class="code" href="https://arxiv.org/pdf/2610.02545" target="_blank">[preprint]</a></p>
-    </li>
-    <li>
-      <p><strong>Climb with SHERPA: Heuristic-Guided Reinforcement Learning via Segmented Experience Relay</strong> <br />
+      </li>
+      <li>
+        <p><strong>Discovering Compositional Primitives Invariant to Context Shift</strong> <br />
+Hochan Bang, <strong>Ganghun Lee</strong>, Min Whoo Lee, Minsu Lee, Byoung-Tak Zhang <br />
+NeurIPS 2026 in PTA Workshop
+<!-- <a class="code" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9811858" target="_blank">[pdf]</a> --></p>
+      </li>
+      <li>
+        <p><strong>Climb with SHERPA: Heuristic-Guided Reinforcement Learning via Segmented Experience Relay</strong> <br />
 Minji Kim, <strong>Ganghun Lee</strong>, Minsu Lee, Byoung-Tak Zhang <br />
 RA-L 2026
 <a class="code" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11434514" target="_blank">[pdf]</a></p>
-    </li>
-    <li>
-      <p><strong>Recency-Biased Sampling for Up-to-Date Adaptation of Reinforcement Learning</strong> <br />
-<strong>Ganghun Lee</strong>, Minji Kim, Minsu Lee, Byoung-Tak Zhang <br />
-KSC 2025 (<span style="color: #0056b3; font-weight: bold;">Best paper award</span>)
-<a class="code" href="https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE12577574" target="_blank">[pdf]</a></p>
-    </li>
-    <li>
-      <p><strong>Truncated Gaussian Policy for Debiased Continuous Control</strong> <br />
+      </li>
+      <li>
+        <p><strong>Truncated Gaussian Policy for Debiased Continuous Control</strong> <br />
 <strong>Ganghun Lee</strong>, Minji Kim, Minsu Lee, Byoung-Tak Zhang <br />
 AAAI 2025 (<span style="color: #0056b3; font-weight: bold;">Oral presentation</span>)
 <a class="code" href="https://ojs.aaai.org/index.php/AAAI/article/view/33988" target="_blank">[pdf]</a></p>
-    </li>
-    <li>
-      <p><strong>Neural Collage Transfer: Artistic Reconstruction via Material Manipulation</strong> <br />
+      </li>
+      <li>
+        <p><strong>Neural Collage Transfer: Artistic Reconstruction via Material Manipulation</strong> <br />
 <strong>Ganghun Lee</strong>, Minji Kim, Yunsu Lee, Minsu Lee, Byoung-Tak Zhang <br />
 ICCV 2023
 <a class="code" href="https://openaccess.thecvf.com/content/ICCV2023/papers/Lee_Neural_Collage_Transfer_Artistic_Reconstruction_via_Material_Manipulation_ICCV_2023_paper.pdf" target="_blank">[pdf]</a>
 <a class="code" href="https://github.com/northadventure/CollageRL" target="_blank">[github]</a></p>
-    </li>
-    <li>
-      <p><strong>Defiant Policy Learning for Efficient Exploration in Reinforcement Learning</strong> <br />
-<strong>Ganghun Lee</strong>, Minsu Lee, Byoung-Tak Zhang <br />
-KSC 2023
-<a class="code" href="https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE11705331" target="_blank">[pdf]</a></p>
-    </li>
-    <li>
-      <p><strong>H2RL: Transferring Heuristic Knowledge to a Reinforcement Learning Agent for Solving the Online 3D Bin Packing Problem</strong> <br />
+      </li>
+      <li>
+        <p><strong>H2RL: Transferring Heuristic Knowledge to a Reinforcement Learning Agent for Solving the Online 3D Bin Packing Problem</strong> <br />
 Minji Kim<sup>†</sup>, <strong>Ganghun Lee</strong><sup>†</sup>, Minsu Lee, Byoung-Tak Zhang <br />
 ICRA 2023 Workshop (<span style="color: #0056b3; font-weight: bold;">Spotlight</span>)
 <a class="code" href="https://transferabilityinrobotics.github.io/icra2023/spotlight/TRW08_abstract.pdf" target="_blank">[pdf]</a></p>
-    </li>
-    <li>
-      <p><strong>Multi-Agent Reinforcement Learning for Cover Tactics in SMAC Environment</strong> <br />
-Yesol Park, <strong>Ganghun Lee</strong>, Yunsu Lee, Junseok Park, Byoung-Tak Zhang <br />
-KSC 2023
-<a class="code" href="https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE11705319" target="_blank">[pdf]</a></p>
-    </li>
-    <li>
-      <p><strong>From Scratch to Sketch: Deep Decoupled Hierarchical Reinforcement Learning for Robotic Sketching Agent</strong> <br />
+      </li>
+      <li>
+        <p><strong>From Scratch to Sketch: Deep Decoupled Hierarchical Reinforcement Learning for Robotic Sketching Agent</strong> <br />
 <strong>Ganghun Lee</strong>, Minji Kim, Minsu Lee, Byoung-Tak Zhang <br />
 ICRA 2022
 <a class="code" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9811858" target="_blank">[pdf]</a></p>
-    </li>
-    <li>
-      <p><strong>Response Analysis of Deep Neural Networks to Optical Illusion Video</strong> <br />
+      </li>
+    </ul>
+
+  </div>
+</div>
+
+<div class="content-row publications-list">
+<h3>Selected Mini Publications</h3>
+<div class="content-body">
+
+    <ul>
+      <li>
+        <p><strong>Recency-Biased Sampling for Up-to-Date Adaptation of Reinforcement Learning</strong> <br />
+<strong>Ganghun Lee</strong>, Minji Kim, Minsu Lee, Byoung-Tak Zhang <br />
+KSC 2025 (<span style="color: #0056b3; font-weight: bold;">Best paper award</span>)
+<a class="code" href="https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE12577574" target="_blank">[pdf]</a></p>
+      </li>
+      <li>
+        <p><strong>Defiant Policy Learning for Efficient Exploration in Reinforcement Learning</strong> <br />
+<strong>Ganghun Lee</strong>, Minsu Lee, Byoung-Tak Zhang <br />
+KSC 2023
+<a class="code" href="https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE11705331" target="_blank">[pdf]</a></p>
+      </li>
+      <li>
+        <p><strong>Multi-Agent Reinforcement Learning for Cover Tactics in SMAC Environment</strong> <br />
+Yesol Park, <strong>Ganghun Lee</strong>, Yunsu Lee, Junseok Park, Byoung-Tak Zhang <br />
+KSC 2023
+<a class="code" href="https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE11705319" target="_blank">[pdf]</a></p>
+      </li>
+      <li>
+        <p><strong>Response Analysis of Deep Neural Networks to Optical Illusion Video</strong> <br />
 <strong>Ganghun Lee</strong>, Kibeom Kim, Minsu Lee, Byoung-Tak Zhang <br />
 KSC 2021
 <a class="code" href="https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE11035857" target="_blank">[pdf]</a></p>
-    </li>
-    <li>
-      <p><strong>Diverged Episodic Memory-based Self-Supervised Policy Learning</strong> <br />
+      </li>
+      <li>
+        <p><strong>Diverged Episodic Memory-based Self-Supervised Policy Learning</strong> <br />
 <strong>Ganghun Lee</strong>, Kibeom Kim, Dong-sig Han, Byoung-Tak Zhang <br />
 KCC 2021, KIISE 2023 (<span style="color: #0056b3; font-weight: bold;">Best paper award</span>)
 <a class="code" href="https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE11214553" target="_blank">[pdf]</a></p>
-    </li>
-    <li>
-      <p><strong>Evolved Intrinsic Motivation for Fully Autonomous Reinforce Learning</strong> <br />
+      </li>
+      <li>
+        <p><strong>Evolved Intrinsic Motivation for Fully Autonomous Reinforce Learning</strong> <br />
 <strong>Ganghun Lee</strong>, Byoung-Tak Zhang <br />
 KSC 2020
 <a class="code" href="https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE10529765" target="_blank">[pdf]</a></p>
-    </li>
-  </ul>
+      </li>
+    </ul>
 
+  </div>
 </div>
 
 <details class="foldable-section">
 <summary>All Publications</summary>
-<div class="publications-list">
+<div class="foldable-content publications-list">
 
     <ul>
       <li>
@@ -382,7 +420,7 @@ KSC 2017 Undergraduate Session
 
 <details class="foldable-section">
 <summary>Research &amp; Industry Experience</summary>
-<div class="experiences">
+<div class="foldable-content experiences">
 
   <h4 class="exp-title">
     <i class="material-icons md-18">military_tech</i>
@@ -491,7 +529,7 @@ KSC 2017 Undergraduate Session
 
 <details class="foldable-section">
 <summary>Awards &amp; Scholarships</summary>
-<div>
+<div class="foldable-content">
     <ul>
       <li><strong>Grand Prize at 2025 Demo Competition</strong>, Seoul National University, 2025</li>
       <li><strong>AAAI 2025 Oral Presentation</strong>, 2025</li>
@@ -512,10 +550,10 @@ KSC 2017 Undergraduate Session
 
 
       </section>
-      <footer>
-        <p><small>Hosted on GitHub Pages<br/> Based on a theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
-      </footer>
     </div>
+    <footer>
+      <small>Hosted on GitHub Pages · Based on a theme by <a href="https://github.com/orderedlist">orderedlist</a></small>
+    </footer>
     <script src="/assets/js/scale.fix.js"></script>
     
   </body>

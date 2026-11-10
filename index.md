@@ -2,51 +2,73 @@
 layout: default
 ---
 
-<div id="time-message"></div>
-<script>
-  const hour = new Date().getHours();
-  let message = "";
-  if (hour < 12 && hour >= 6) {
-    message = "Good Morning!";
-  } else if (hour < 18 && hour >= 12) {
-    message = "Good Afternoon!";
-  } else {
-    message = "Good Evening!";
-  }
-  document.getElementById("time-message").innerText = message;
-</script>
+<style>
+  .thought-text strong {
+  background: linear-gradient(transparent 55%, #fff2a8 55%);
+  padding: 0 0.08em;
+}
+</style>
 
-I am currently at **AI Institute Seoul National University (AIIS)**, completing my third year of service as **Professional Research Personnel**.
-I received my **Ph.D.** in the **Interdisciplinary Program in Artificial Intelligence** at **Seoul National University** in August 2026. During my graduate studies, I conducted research at the **[Biointelligence Lab](https://bi.snu.ac.kr/)** under the supervision of **[Prof. Byoung-Tak Zhang](https://bi.snu.ac.kr/members/byoung-tak-zhang.html)**, beginning in 2020.
+<div class="thought-text" style="font-family: Georgia, 'Times New Roman', serif; font-size: 19px; line-height: 1.65; color: #727272;" markdown="1">
+What's the essence of learning?<br/>
+I'd say it's **experience**.
 
-### Research Focus
-My research focuses on **Reinforcement Learning (RL)** for sequential decision-making, with an emphasis on developing general learning methods that support effective behavior in autonomous systems. My work spans continuous control, visually guided tasks, and multi-agent tactical coordination.
+Data is a static essence of experience.<br/>
+Supervised learning is an imitation of paired data.<br/>
+Neural networks enable generalization and interpolation.
 
-* 🧠 **Sequential Decision-Making & Reinforcement Learning**
-* 🛩️ **Autonomous Systems & Multi-Agent Coordination**
-* 📷 **Visual Learning & Control**
+But the fun begins with **trial and error** where a machine learns from **tons of failures**.  
+Imitation reproduces, but **action** **discovers**.  
+We are all discovered beings of ongoing **evolution**, emerging from **uncertainty**, in all our **diversity**.
 
-I am increasingly interested in connecting advances in RL to practical autonomous systems, including autonomous combat systems and manned–unmanned teaming.
+<div style="text-align: right;">And we are all <strong>failures</strong>.</div>
+</div>
 
-My doctoral research focused on a generalized framework for desired-state-based reinforcement learning to broaden the scope of application and the practical utility of RL.
+<hr class="intro-divider">
 
-<div class="publications-list" markdown="1">
+<div class="content-row">
+<h3>About</h3>
+<div class="content-body" style="font-family: Georgia, 'Times New Roman', serif; font-size: 16px; line-height: 1.65; color: #727272;" markdown="1">
+AI Researcher at **[AIIS](https://aiis.snu.ac.kr/)**, SNU.<br/>
+Earned my M.S. and Ph.D. from SNU at the **[Biointelligence Lab](https://bi.snu.ac.kr/)**, under the supervision of **[Prof. Byoung-Tak Zhang](https://bi.snu.ac.kr/members/byoung-tak-zhang.html)**.<br/>
+</div>
+</div>
 
-### Selected Publications
+<div class="content-row">
+<h3>Research Focus</h3>
+<div class="content-body" style="font-family: Georgia, 'Times New Roman', serif; font-size: 16px; line-height: 1.65; color: #727272;" markdown="1">
+<span style="color: #444444;">Experience-driven Learning, Reinforcement Learning, Robotics & Simulation, Behavioral Diversity, Sequential Discovery, Autonomous System</span><br/>
+
+CS to CS, CS to AI.
+Excited to make something, became curious about intelligence.
+Now I'm one of the most serious people about the importance of experience-based learning.
+There's so much data, growing exponentially. Data-driven methods have advanced explosively, and still are.
+On the other hand, the role of experience seems a bit hidden, despite having so much potential.
+<span style="color: #444444;">It's time to shine: to fill the gaps in dynamics, creativity, and agency.</span>
+
+Currently working on modality-retaining policies and RL as a discovery machine, on the stage of unsupervised sequential sketch generation.
+Also interested in prior utilization for RL.
+Seeing VLMs as the cerebrum and RL policies as the cerebellum.
+</div>
+</div>
+
+<div class="content-row publications-list">
+<h3>Selected Publications</h3>
+<div class="content-body" markdown="1">
 - **Reward Inflation: A Healthy Stimulus for Reinforcement Learning** <br/>
 **Ganghun Lee**, Minji Kim, Minsu Lee, Byoung-Tak Zhang <br/>
 NeurIPS 2026
 <a class="code" href="https://arxiv.org/pdf/2610.02545" target="_blank">[preprint]</a>
 
+- **Discovering Compositional Primitives Invariant to Context Shift** <br/>
+Hochan Bang, **Ganghun Lee**, Min Whoo Lee, Minsu Lee, Byoung-Tak Zhang <br/>
+NeurIPS 2026 in PTA Workshop
+<!-- <a class="code" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9811858" target="_blank">[pdf]</a> -->
+
 - **Climb with SHERPA: Heuristic-Guided Reinforcement Learning via Segmented Experience Relay** <br/>
 Minji Kim, **Ganghun Lee**, Minsu Lee, Byoung-Tak Zhang <br/>
 RA-L 2026
 <a class="code" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11434514" target="_blank">[pdf]</a>
-
-- **Recency-Biased Sampling for Up-to-Date Adaptation of Reinforcement Learning** <br/>
-**Ganghun Lee**, Minji Kim, Minsu Lee, Byoung-Tak Zhang <br/>
-KSC 2025 (<span style="color: #0056b3; font-weight: bold;">Best paper award</span>)
-<a class="code" href="https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE12577574" target="_blank">[pdf]</a>
 
 - **Truncated Gaussian Policy for Debiased Continuous Control** <br/>
 **Ganghun Lee**, Minji Kim, Minsu Lee, Byoung-Tak Zhang <br/>
@@ -59,25 +81,37 @@ ICCV 2023
 <a class="code" href="https://openaccess.thecvf.com/content/ICCV2023/papers/Lee_Neural_Collage_Transfer_Artistic_Reconstruction_via_Material_Manipulation_ICCV_2023_paper.pdf" target="_blank">[pdf]</a>
 <a class="code" href="https://github.com/northadventure/CollageRL" target="_blank">[github]</a>
 
-- **Defiant Policy Learning for Efficient Exploration in Reinforcement Learning** <br/>
-**Ganghun Lee**, Minsu Lee, Byoung-Tak Zhang <br/>
-KSC 2023
-<a class="code" href="https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE11705331" target="_blank">[pdf]</a>
-
 - **H2RL: Transferring Heuristic Knowledge to a Reinforcement Learning Agent for Solving the Online 3D Bin Packing Problem** <br/>
 Minji Kim<sup>†</sup>, **Ganghun Lee**<sup>†</sup>, Minsu Lee, Byoung-Tak Zhang <br/>
 ICRA 2023 Workshop (<span style="color: #0056b3; font-weight: bold;">Spotlight</span>)
 <a class="code" href="https://transferabilityinrobotics.github.io/icra2023/spotlight/TRW08_abstract.pdf" target="_blank">[pdf]</a>
 
-- **Multi-Agent Reinforcement Learning for Cover Tactics in SMAC Environment** <br/>
-Yesol Park, **Ganghun Lee**, Yunsu Lee, Junseok Park, Byoung-Tak Zhang <br/>
-KSC 2023
-<a class="code" href="https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE11705319" target="_blank">[pdf]</a>
-
 - **From Scratch to Sketch: Deep Decoupled Hierarchical Reinforcement Learning for Robotic Sketching Agent** <br/>
 **Ganghun Lee**, Minji Kim, Minsu Lee, Byoung-Tak Zhang <br/>
 ICRA 2022
 <a class="code" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9811858" target="_blank">[pdf]</a>
+
+</div>
+</div>
+
+<div class="content-row publications-list">
+<h3>Selected Mini Publications</h3>
+<div class="content-body" markdown="1">
+
+- **Recency-Biased Sampling for Up-to-Date Adaptation of Reinforcement Learning** <br/>
+**Ganghun Lee**, Minji Kim, Minsu Lee, Byoung-Tak Zhang <br/>
+KSC 2025 (<span style="color: #0056b3; font-weight: bold;">Best paper award</span>)
+<a class="code" href="https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE12577574" target="_blank">[pdf]</a>
+
+- **Defiant Policy Learning for Efficient Exploration in Reinforcement Learning** <br/>
+**Ganghun Lee**, Minsu Lee, Byoung-Tak Zhang <br/>
+KSC 2023
+<a class="code" href="https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE11705331" target="_blank">[pdf]</a>
+
+- **Multi-Agent Reinforcement Learning for Cover Tactics in SMAC Environment** <br/>
+Yesol Park, **Ganghun Lee**, Yunsu Lee, Junseok Park, Byoung-Tak Zhang <br/>
+KSC 2023
+<a class="code" href="https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE11705319" target="_blank">[pdf]</a>
 
 - **Response Analysis of Deep Neural Networks to Optical Illusion Video** <br/>
 **Ganghun Lee**, Kibeom Kim, Minsu Lee, Byoung-Tak Zhang <br/>
@@ -95,10 +129,11 @@ KSC 2020
 <a class="code" href="https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE10529765" target="_blank">[pdf]</a>
 
 </div>
+</div>
 
 <details class="foldable-section">
 <summary>All Publications</summary>
-<div class="publications-list" markdown="1">
+<div class="foldable-content publications-list" markdown="1">
 
 - **Reward Inflation: A Healthy Stimulus for Reinforcement Learning** <br/>
 **Ganghun Lee**, Minji Kim, Minsu Lee, Byoung-Tak Zhang <br/>
@@ -250,7 +285,7 @@ KSC 2017 Undergraduate Session
 
 <details class="foldable-section">
 <summary>Research &amp; Industry Experience</summary>
-<div class="experiences">
+<div class="foldable-content experiences">
 
   <h4 class="exp-title">
     <i class="material-icons md-18">military_tech</i>
@@ -359,7 +394,7 @@ KSC 2017 Undergraduate Session
 
 <details class="foldable-section">
 <summary>Awards &amp; Scholarships</summary>
-<div markdown="1">
+<div class="foldable-content" markdown="1">
 - **Grand Prize at 2025 Demo Competition**, Seoul National University, 2025
 - **AAAI 2025 Oral Presentation**, 2025
 - **KSC 2025 Best Paper Award**, 2025

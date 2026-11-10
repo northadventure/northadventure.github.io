@@ -17,6 +17,7 @@
     <![endif]-->
   </head>
   <body>
+    <div class="top-placeholder" aria-hidden="true"></div>
     <div class="wrapper">
       <header>
         <!--
@@ -73,10 +74,10 @@
       {{ content }}
 
       </section>
-      <footer>
-        <p><small>Hosted on GitHub Pages<br/> Based on a theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
-      </footer>
     </div>
+    <footer>
+      <small>Hosted on GitHub Pages · Based on a theme by <a href="https://github.com/orderedlist">orderedlist</a></small>
+    </footer>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
     {% if site.google_analytics %}
     <script>

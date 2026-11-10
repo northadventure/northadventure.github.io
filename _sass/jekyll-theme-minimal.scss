@@ -2,9 +2,11 @@
 @import "rouge-github";
 
 body {
+  --page-gutter: 50px;
   background-color: #fff;
-  padding:50px;
-  font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding:var(--page-gutter);
+  // font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 14px/1.5 "Georgia", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color:#727272;
   font-weight:400;
 }
@@ -73,8 +75,18 @@ a.code {
 
 // 총 가로폭 제어
 .wrapper {
+  display:flow-root;
   width:960px;  // 기본값
   margin:0 auto;
+}
+
+.top-placeholder {
+  width:calc(100% + 2 * var(--page-gutter));
+  height:48px;
+  margin:calc(-1 * var(--page-gutter)) calc(-1 * var(--page-gutter)) 32px;
+  box-sizing:border-box;
+  background:#fff;
+  border-bottom:1px solid #eee;
 }
 
 blockquote {
@@ -121,7 +133,7 @@ img {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.08); /* 부드러운 그림자 */
+  // box-shadow: 0 4px 20px rgba(0,0,0,0.08); /* 부드러운 그림자 */
   margin: 10px 0;
 }
 
@@ -149,12 +161,11 @@ img.shield-star {
 header {
   width: 270px;
   float: left;
-  position: fixed;
+  position: static;
   background: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(5px);
   border-right: 1px solid #eee;
-  height: calc(100vh - 160px);
-  overflow-y: auto;
+  height: auto;
 
   // 추가: 좌우 여백을 주어 내용물이 선에 붙지 않게 합니다.
   padding: 40px 25px; // 상하 40px, 좌우 25px
@@ -178,15 +189,40 @@ header {
   }
 }
 
+.content-row,
 details.foldable-section {
-  margin-bottom: 20px;
+  display:grid;
+  grid-template-columns:145px minmax(0, 1fr);
+  column-gap:20px;
+  align-items:start;
+  margin-bottom:28px;
+}
 
+.content-row > h3 {
+  grid-column:1;
+  margin:0;
+  font-size:1.17em;
+}
+
+.content-body,
+.foldable-content {
+  grid-column:2;
+  min-width:0;
+}
+
+.content-body > :last-child,
+.foldable-content > :last-child {
+  margin-bottom:0;
+}
+
+details.foldable-section {
   summary {
+    grid-column:1;
     color: #494949;
     cursor: pointer;
     font-size: 1.17em;
     font-weight: 700;
-    margin-bottom: 12px;
+    margin:0;
   }
 }
 
@@ -274,23 +310,24 @@ hr {
   margin:0 0 20px;
 }
 
-// header에 맞춤
 footer {
-  width:270px;  // 기본값
-  float:left;
-  position:fixed;
-  bottom:50px;
+  clear:both;
+  box-sizing:border-box;
+  width:calc(100% + 2 * var(--page-gutter));
+  margin-left:calc(-1 * var(--page-gutter));
+  padding:20px var(--page-gutter);
+  border-top:1px solid #eee;
   -webkit-font-smoothing:subpixel-antialiased;
 }
 
-@media print, screen and (max-width: 960px) {
+@media print, screen and (max-width: 1060px) {
 
   div.wrapper {
     width:auto;
     margin:0;
   }
 
-  header, section, footer {
+  header, section {
     float:none;
     position:static;
     width:auto;
@@ -329,6 +366,19 @@ footer {
     padding:0;
   }
 
+  .content-row,
+  details.foldable-section {
+    grid-template-columns:minmax(0, 1fr);
+    row-gap:8px;
+  }
+
+  .content-row > h3,
+  .content-body,
+  details.foldable-section > summary,
+  .foldable-content {
+    grid-column:1;
+  }
+
   header ul, header p.view {
     position:static;
   }
@@ -340,7 +390,8 @@ footer {
 
 @media print, screen and (max-width: 480px) {
   body {
-    padding:15px;
+    --page-gutter: 15px;
+    padding:var(--page-gutter);
   }
 
   .downloads {
