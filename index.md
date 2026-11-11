@@ -29,8 +29,8 @@ We are all discovered beings of ongoing **evolution**, emerging from **uncertain
 <div class="content-row">
 <h3>About</h3>
 <div class="content-body" style="font-family: Georgia, 'Times New Roman', serif; font-size: 16px; line-height: 1.65; color: #727272;" markdown="1">
-AI Researcher at **[AIIS](https://aiis.snu.ac.kr/)**, SNU.<br/>
-Earned my M.S. and Ph.D. from SNU at the **[Biointelligence Lab](https://bi.snu.ac.kr/)**, under the supervision of **[Prof. Byoung-Tak Zhang](https://bi.snu.ac.kr/members/byoung-tak-zhang.html)**.<br/>
+AI Researcher at <strong><a href="https://aiis.snu.ac.kr/" target="_blank" rel="noopener noreferrer">AIIS</a></strong>, SNU.<br/>
+Earned my M.S. and Ph.D. from SNU at the <strong><a href="https://bi.snu.ac.kr/" target="_blank" rel="noopener noreferrer">Biointelligence Lab</a></strong>, under the supervision of <strong><a href="https://bi.snu.ac.kr/members/byoung-tak-zhang.html" target="_blank" rel="noopener noreferrer">Prof. Byoung-Tak Zhang</a></strong>.<br/>
 </div>
 </div>
 
@@ -293,8 +293,8 @@ KSC 2017 Undergraduate Session
     <sup> 2024.09. - 2027.08. (expected) </sup>
   </h4>
   <div class="exp-details">
-    <div style="flex: 0 0 100%;">- <a class="code" href="https://aiis.snu.ac.kr/eng/" target="_blank">AI Institute Seoul National University (AIIS)</a><sup> 2026.09. - Present </sup></div>
-    <div style="flex: 0 0 100%;">- <a class="code" href="https://bi.snu.ac.kr/" target="_blank">Biointelligence Lab</a>, Seoul National University<sup> 2024.09. - 2026.08. </sup></div>
+    <div style="flex: 0 0 100%;">- <strong><a href="https://aiis.snu.ac.kr/eng/" target="_blank" rel="noopener noreferrer">AI Institute Seoul National University (AIIS)</a></strong><sup> 2026.09. - Present </sup></div>
+    <div style="flex: 0 0 100%;">- <strong><a href="https://bi.snu.ac.kr/" target="_blank" rel="noopener noreferrer">Biointelligence Lab</a></strong>, Seoul National University<sup> 2024.09. - 2026.08. </sup></div>
   </div>
 
   <h4 class="exp-title">

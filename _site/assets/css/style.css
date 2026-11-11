@@ -276,9 +276,15 @@ a {
   color: #267CB9;
   text-decoration: none; }
 
-a:hover, a:focus {
+a:hover, a:focus-visible {
   color: #069;
   font-weight: bold; }
+
+header a:hover,
+header a:focus-visible {
+  color: #267CB9;
+  font-weight: 400;
+  text-decoration: underline; }
 
 a small {
   font-size: 11px;
@@ -433,7 +439,7 @@ ul.downloads {
   padding-top: 6px;
   height: 34px; }
 
-.downloads a:hover, .downloads a:focus {
+.downloads a:hover, .downloads a:focus-visible {
   color: #675C5C;
   font-weight: bold; }
 
@@ -608,6 +614,14 @@ footer {
     /* 이탤릭보다 색상으로 구분 권장 */
     color: #666;
     font-size: 0.9em; }
+  .publications-list a.code {
+    color: #1D8A4D;
+    font-weight: 400; }
+  .publications-list a.code:hover,
+  .publications-list a.code:focus-visible {
+    color: #1D8A4D;
+    font-weight: 400;
+    text-decoration: underline; }
 
 .experiences {
   margin-bottom: 20px; }
