@@ -88,12 +88,43 @@ a.code {
 }
 
 .top-placeholder {
+  display:flex;
+  align-items:center;
   width:calc(100% + 2 * var(--page-gutter));
   height:48px;
   margin:calc(-1 * var(--page-gutter)) calc(-1 * var(--page-gutter)) 32px;
+  padding:0 var(--page-gutter);
   box-sizing:border-box;
   background:#fff;
   border-bottom:1px solid #eee;
+}
+
+.top-placeholder-inner,
+.footer-inner {
+  width:960px;
+  max-width:100%;
+  margin:0 auto;
+  padding-left:25px;
+  box-sizing:border-box;
+}
+
+.top-placeholder-inner {
+  display:flex;
+  align-items:center;
+}
+
+.footer-inner {
+  padding-left:0;
+  text-align:right;
+}
+
+img.topbar-logo {
+  width:auto;
+  height:42px;
+  max-width:100%;
+  border-radius:0;
+  box-shadow:none;
+  margin:0;
 }
 
 blockquote {
@@ -149,6 +180,15 @@ img.small_icon {
     vertical-align: sub;
 }
 
+img.sidebar-logo {
+  display:block;
+  width:100%;
+  max-width:100%;
+  border-radius:0;
+  box-shadow:none;
+  margin:0 0 14px;
+}
+
 img.shield-star {
     height: 20px;
     vertical-align: sub;
@@ -175,7 +215,7 @@ header {
   height: auto;
 
   // 추가: 좌우 여백을 주어 내용물이 선에 붙지 않게 합니다.
-  padding: 40px 25px; // 상하 40px, 좌우 25px
+  padding: 0 25px 40px;
   
   // padding 추가 시 너비 계산 방식 주의 (테두리 포함)
   box-sizing: border-box; 
@@ -342,6 +382,7 @@ footer {
 
   header {
     padding-right:320px;
+    padding-top:20px;
     height:auto;
     overflow:visible;
   }
@@ -373,6 +414,10 @@ footer {
     padding:0;
   }
 
+  section {
+    padding-top:0;
+  }
+
   .content-row,
   details.foldable-section {
     grid-template-columns:minmax(0, 1fr);
@@ -384,6 +429,11 @@ footer {
   details.foldable-section > summary,
   .foldable-content {
     grid-column:1;
+  }
+
+  .top-placeholder-inner,
+  .footer-inner {
+    padding-left:0;
   }
 
   header ul, header p.view {

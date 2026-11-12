@@ -289,7 +289,7 @@ KSC 2017 Undergraduate Session
 
   <h4 class="exp-title">
     <i class="material-icons md-18">military_tech</i>
-    Professional Research Personnel, Republic of Korea
+    3-Year Alternative Mandatory Military Service as Professional Research Personnel, Republic of Korea
     <sup> 2024.09. - 2027.08. (expected) </sup>
   </h4>
   <div class="exp-details">
